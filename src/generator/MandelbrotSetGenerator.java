@@ -17,8 +17,8 @@ public class MandelbrotSetGenerator {
     public static final double MANDELBROT_MAX_X = 1;
     public static final double MANDELBROT_X_INTERVAL_LENGTH = MANDELBROT_MAX_X - MANDELBROT_MIN_X;
 
-    public static final double MANDELBROT_MAX_Y = 1;
-    public static final double MANDELBROT_MIN_Y = -1;
+    public static final double MANDELBROT_MAX_Y = 1.25;
+    public static final double MANDELBROT_MIN_Y = -1.25;
     public static final double MANDELBROT_Y_INTERVAL_LENGTH = MANDELBROT_MAX_Y - MANDELBROT_MIN_Y;
 
     private List<MandelbrotNumber> generatedNumbers;
