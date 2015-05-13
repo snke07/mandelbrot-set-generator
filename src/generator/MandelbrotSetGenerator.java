@@ -176,7 +176,7 @@ public class MandelbrotSetGenerator {
 			this.generatedNumbers = new ArrayList<MandelbrotNumber>();
 			generateFinalNumberCount(precision);
 
-			this.numberOfExpectedThreads = (int) (MANDELBROT_X_INTERVAL_LENGTH / (realPartIterations * precision));
+			this.numberOfExpectedThreads = (int) (MANDELBROT_X_INTERVAL_LENGTH / (realPartIterations * precision)) + 1;
 			if (this.numberOfExpectedThreads * realPartIterations * precision < MANDELBROT_X_INTERVAL_LENGTH) {
 				this.numberOfExpectedThreads++;
 			}
